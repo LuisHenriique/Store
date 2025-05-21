@@ -24,6 +24,11 @@ public class Book extends Products {
 
     @Override
     public void show_details() {
-        System.out.println(name +"\n"+ "Código: "+ this.spaceCode +"Título: " +this.nameBook + "\n" +"Autor: " + this.author +"\n"+ "Editora: " + this.publisher +"\n"+"Edition:" + this.edition +"\n"+ "Ano: " + this.year +"\n" + "Páginas: " + this.pages +"\n"+ "Idioma: " + this.language +"\n");
+        System.out.println(name +"\n"+ "Código: "+ this.spaceCode +"\n"+"Título: " +this.nameBook + "\n" +"Autor: " + this.author +"\n"+ "Editora: " + this.publisher +"\n"+"Edition:" + this.edition +"\n"+ "Ano: " + this.year +"\n" + "Páginas: " + this.pages +"\n"+ "Idioma: " + this.language +"\n");
+    }
+
+    @Override
+    public String get_nome_principal() {
+        return this.nameBook;
     }
 }

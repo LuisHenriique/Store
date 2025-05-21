@@ -9,8 +9,7 @@ public class Products {
     this.spaceCode = spaceCode;
     }
 
-    // função responsável por atualizar a variável quantityProducts, ou seja a quantidade do de peças do produto
-
+    // função responsável por atualizar a variável quantityProducts, ou seja, a quantidade do respectivo produto
     public void add_quantity_products(int qtd){
         this.quantityProducts += qtd;
     }
@@ -21,11 +20,22 @@ public class Products {
         }
         else{
             this.quantityProducts -= qtd; // this.quantityProducts = this.quantity - qtd;
+            return true;
         }
     }
-    public void show_details() {
+
+    public int get_quantity_products(){
+        return this.quantityProducts;
+    }
+    public void show_details(){
 
     }
+
+    // retorna o "nome principal", seja título, nome, etc.
+    public String get_nome_principal(){
+        return null;
+    }
+
 
     public String get_space_code() {
         return spaceCode;

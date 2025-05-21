@@ -6,7 +6,7 @@ public class CD extends Products{
     private String year;
 
 
-    public CD(String name, String spaceCode, String  year, String recordCompany, String numbers_musics, String nameSinger, String titleAlbum) {
+    public CD(String name, String spaceCode, String titleAlbum, String nameSinger , String numbers_musics , String recordCompany, String  year ) {
         super(name, spaceCode);
         this.year = year;
         this.recordCompany = recordCompany;
@@ -18,7 +18,12 @@ public class CD extends Products{
     @Override
     public void show_details() {
         System.out.println(this.name);
-        System.out.println("Código: " + "\n" + "Título: " + this.titleAlbum + "\n" + "Banda: " + this.nameSinger + "\n" + "Gravadora: " + this.recordCompany + "\n" + "Ano: " + this.year + "\n" + "trilhas: " + this.numbers_musics + "\n");
+        System.out.println("Código: " + "\n" + "Título: " +"\n"+ this.titleAlbum + "\n" + "Banda: " + this.nameSinger + "\n" + "Gravadora: " + this.recordCompany + "\n" + "Ano: " + this.year + "\n" + "trilhas: " + this.numbers_musics + "\n");
 
+    }
+
+    @Override
+    public String get_nome_principal() {
+        return this.nameSinger;
     }
 }

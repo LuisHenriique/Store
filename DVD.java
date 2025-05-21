@@ -21,4 +21,9 @@ public class DVD extends Products {
         System.out.println(this.name);
         System.out.println("Código: " + "\n" + "Título: " + this.nameFilm + "\n" + "Diretor: " + this.director + "\n" + "Gênero: " + this.filmGenre + "\n" + "Ano: " + this.year + "\n" + "Nacionalidade: " + this.nationality + "\n" + "Idioma: " + this.language + "\n");
     }
+
+    @Override
+    public String get_nome_principal() {
+        return this.nameFilm;
+    }
 }
