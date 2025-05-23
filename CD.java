@@ -18,7 +18,8 @@ public class CD extends Products{
     @Override
     public void show_details() {
         System.out.println(this.name);
-        System.out.println("Código: " + "\n" + "Título: " +"\n"+ this.titleAlbum + "\n" + "Banda: " + this.nameSinger + "\n" + "Gravadora: " + this.recordCompany + "\n" + "Ano: " + this.year + "\n" + "trilhas: " + this.numbers_musics + "\n");
+        System.out.println("Código: "+this.spaceCode.replaceFirst("^0+(?!$)", ""));
+        System.out.println("Título: " + this.titleAlbum + "\n" + "Banda: " + this.nameSinger + "\n" + "Gravadora: " + this.recordCompany + "\n" + "Ano: " + this.year + "\n" + "trilhas: " + this.numbers_musics);
 
     }
 

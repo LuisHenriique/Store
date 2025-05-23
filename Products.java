@@ -14,14 +14,8 @@ public class Products {
         this.quantityProducts += qtd;
     }
 
-    public boolean remove_quantity_products(int qtd){
-        if(qtd > this.quantityProducts){
-            return false;
-        }
-        else{
+    public void remove_quantity_products(int qtd){
             this.quantityProducts -= qtd; // this.quantityProducts = this.quantity - qtd;
-            return true;
-        }
     }
 
     public int get_quantity_products(){
@@ -41,5 +35,8 @@ public class Products {
         return spaceCode;
     }
 
+    public String get_name_type(){
+        return this.name;
+    }
 
 }
